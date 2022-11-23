@@ -70,4 +70,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: ${{ github.workflow }} успешно выполнен!
+        photo: picture/logo.png
+        message: |
+          ${{ github.workflow }} успешно выполнен!
+          send photo message
